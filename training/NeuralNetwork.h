@@ -23,7 +23,6 @@ private:
 
 public:
     NeuralNetwork(int inputNodes, int hiddenNodes, int outputNodes, double learningRate);
-    vector<double> feedForward(const vector<double>& inputs);
     void train(const vector<double>& inputs, const vector<double>& targets);
     void saveModel(const string& filename);
 };

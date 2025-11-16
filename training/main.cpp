@@ -3,7 +3,6 @@
 #include <string>
 #include <fstream>
 #include <stdexcept>
-#include <iomanip>
 #include <algorithm>
 #include "neuralnetwork.h"
 

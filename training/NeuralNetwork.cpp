@@ -64,13 +64,6 @@ void NeuralNetwork::feedForwardDetailed(const vector<double>& inputs, vector<dou
     }
 }
 
-vector<double> NeuralNetwork::feedForward(const vector<double>& inputs) {
-    vector<double> hidden(hiddenNodes);
-    vector<double> outputs(outputNodes);
-    feedForwardDetailed(inputs, hidden, outputs);
-    return outputs;
-}
-
 void NeuralNetwork::train(const vector<double>& inputs, const vector<double>& targets) {
     vector<double> hidden(hiddenNodes);
     vector<double> outputs(outputNodes);
